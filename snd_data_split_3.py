@@ -7,6 +7,10 @@ Created on Thu May  3 17:51:25 2018
 """
 from sklearn.model_selection import train_test_split
 
+# =============================================================================
+# Split / Partition data with easy to understand proportions for your network 
+# to 3 part.
+# =============================================================================
 def snd_data_split_3(X,Y,train_proportion,test_proportion,validation_proportion):
     size_1 = 1 - train_proportion
     size_2 = validation_proportion/(test_proportion+validation_proportion)
