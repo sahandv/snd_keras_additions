@@ -23,9 +23,9 @@ def snd_image_filter(image, kernel_div = None):
 
     return filtered
 
-IMAGE_DIR = "/home/sahand/Desktop/Output June (shabnam)/4"
-OUTPUT_DIR = "/home/sahand/Desktop/Output June (shabnam) (smooth)/4"
-OUTPUT_DIR_CPY = "/home/sahand/Desktop/Output June (shabnam) (copy)/4"
+IMAGE_DIR = "input_dir"
+OUTPUT_DIR = "output_dir"
+OUTPUT_DIR_CPY = "copy_dir"
 file_names = next(os.walk(IMAGE_DIR))[2]
 for i in range(len(file_names)):
     image = cv2.imread(os.path.join(IMAGE_DIR,file_names[i]))
