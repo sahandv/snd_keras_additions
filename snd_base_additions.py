@@ -31,5 +31,5 @@ def class_accuracy_percentage_calc(Y_actual,Y_prediction):
     count_of_classess = df_confusion.All.size
     class_accuracy_percentage = []
     for i in range(count_of_classess-1):
-        class_accuracy_percentage.append(float(df_confusion[i][i])/float(df_confusion.All[i])))
+        class_accuracy_percentage.append(float(df_confusion[i][i])/float(df_confusion.All[i]))
     return class_accuracy_percentage
