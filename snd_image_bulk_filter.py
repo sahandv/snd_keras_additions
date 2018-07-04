@@ -25,10 +25,10 @@ def snd_image_filter(image, kernel_div = None):
 
 IMAGE_DIR = "input_dir"
 OUTPUT_DIR = "output_dir"
-OUTPUT_DIR_CPY = "copy_dir"
+
 file_names = next(os.walk(IMAGE_DIR))[2]
 for i in range(len(file_names)):
     image = cv2.imread(os.path.join(IMAGE_DIR,file_names[i]))
     image_new = snd_image_filter(image, 15)
     cv2.imwrite(os.path.join(OUTPUT_DIR,file_names[i]),image_new)
-#    cv2.imwrite(os.path.join(OUTPUT_DIR_CPY,file_names[i]),image)
+
